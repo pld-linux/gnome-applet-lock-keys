@@ -36,6 +36,7 @@ tych klawiszy i odtwarza go przy uruchamianiu gnome2.
 %setup -q -n %{_realname}-%{version}
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
