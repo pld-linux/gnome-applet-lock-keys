@@ -29,7 +29,7 @@ Lock keys applet jest appletem gnome2, który pokazuje stan diod
 CAPS-, NUM- i SCROLL-Lock klawiatury. Nie jest mo¿e u¿yteczny podczas
 korzystania z normalnej klawiatury, gdy¿ posiadaj± one te diody.
 Jednak niektóre klawiatury (g³ównie bezprzewodowe) nie posiadaj± tych
-diód. Dodatkowym u³atwienie apletu jest to, ¿e zapamiêtuje on stan
+diod. Dodatkowym u³atwienie apletu jest to, ¿e zapamiêtuje on stan
 tych klawiszy i odtwarza go przy uruchamianiu gnome2.
 
 %prep
