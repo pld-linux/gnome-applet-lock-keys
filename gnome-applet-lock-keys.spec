@@ -1,6 +1,6 @@
 %define		_realname	lock-keys-applet
 Summary:	Show status of your lock key leds
-Summary(pl):	Pokazuje status diód klawiatury
+Summary(pl):	Pokazuje status diod klawiatury
 Name:		gnome-applet-lock-keys
 Version:	1.0
 Release:	1
@@ -25,7 +25,7 @@ more feature of the applet is that it saves the status of the
 lock-keys and restores it, when starting gnome2.
 
 %description -l pl
-Lock keys applet jest appletem gnome2, który pokazuje stan diód
+Lock keys applet jest appletem gnome2, który pokazuje stan diod
 CAPS-, NUM- i SCROLL-Lock klawiatury. Nie jest mo¿e u¿yteczny podczas
 korzystania z normalnej klawiatury, gdy¿ posiadaj± one te diody.
 Jednak niektóre klawiatury (g³ównie bezprzewodowe) nie posiadaj± tych
