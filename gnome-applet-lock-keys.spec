@@ -17,20 +17,20 @@ Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Lock keys applet is a gnome2 applet, that shows the status of the
+Lock keys applet is a GNOME 2 applet, that shows the status of the
 CAPS-, NUM- and SCROLL-Lock keys of your keyboard. This isn't
 especially usefull for normal keyboards, as they got leds for that.
 But some keyboards (especially wireless keyboards) don't have. One
 more feature of the applet is that it saves the status of the
-lock-keys and restores it, when starting gnome2.
+lock-keys and restores it, when starting GNOME 2.
 
 %description -l pl
-Lock keys applet jest appletem gnome2, który pokazuje stan diod
+Lock keys applet jest appletem GNOME 2, który pokazuje stan diod
 CAPS-, NUM- i SCROLL-Lock klawiatury. Nie jest mo¿e u¿yteczny podczas
 korzystania z normalnej klawiatury, gdy¿ posiadaj± one te diody.
 Jednak niektóre klawiatury (g³ównie bezprzewodowe) nie posiadaj± tych
 diod. Dodatkowym u³atwienie apletu jest to, ¿e zapamiêtuje on stan
-tych klawiszy i odtwarza go przy uruchamianiu gnome2.
+tych klawiszy i odtwarza go przy uruchamianiu GNOME 2.
 
 %prep
 %setup -q -n %{_realname}-%{version}
