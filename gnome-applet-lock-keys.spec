@@ -3,7 +3,7 @@ Summary:	Show status of your lock key leds
 Summary(pl):	Pokazuje status diod klawiatury
 Name:		gnome-applet-lock-keys
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.wh-hms.uni-ulm.de/~mfcn/shared/lock-keys/%{_realname}-%{version}.tar.gz
