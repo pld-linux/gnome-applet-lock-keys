@@ -3,7 +3,7 @@ Summary:	Show status of your lock key leds
 Summary(pl):	Pokazuje status diod klawiatury
 Name:		gnome-applet-lock-keys
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.wh-hms.uni-ulm.de/~mfcn/shared/lock-keys/%{_realname}-%{version}.tar.gz
@@ -13,7 +13,9 @@ BuildRequires:	gnome-desktop-devel >= 2.2.0
 BuildRequires:	gnome-panel-devel >= 2.2.0
 BuildRequires:	libglade2-devel >= 2.0.1
 BuildRequires:	libgnomeui-devel >= 2.2.0
-Requires(post):	GConf2
+BuildRequires:	rpmbuild(macros) >= 1.71
+BuildRequires:	scrollkeeper
+Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,12 +55,17 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%gconf_schema_install
+%scrollkeeper_update_post
+
+%postun
+%scrollkeeper_update_postun
 
 %files -f lock-keys-applet.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_libdir}/lock-keys-applet
-%{_libdir}/bonobo/servers/*.server
-%{_datadir}/omf/lock-keys-applet/*.omf
-%{_pixmapsdir}/*.png
+%{_libdir}/bonobo/servers/GNOME_LockKeysApplet.server
+%dir %{_omf_dest_dir}/lock-keys-applet
+%{_omf_dest_dir}/lock-keys-applet/lock-keys-applet-C.omf
+%lang(de) %{_omf_dest_dir}/lock-keys-applet/lock-keys-applet-de.omf
+%{_pixmapsdir}/lock-keys-applet.png
