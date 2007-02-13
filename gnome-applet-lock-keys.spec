@@ -1,6 +1,6 @@
 %define		_realname	lock-keys-applet
 Summary:	Show status of your lock key leds
-Summary(pl.UTF-8):   Pokazuje status diod klawiatury
+Summary(pl.UTF-8):	Pokazuje status diod klawiatury
 Name:		gnome-applet-lock-keys
 Version:	1.0
 Release:	3
